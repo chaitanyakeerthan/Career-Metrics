@@ -1,0 +1,94 @@
+/* ===============================
+   LEARNING ROADMAP
+================================ */
+
+.roadmap-panel{
+background:#1c2f39;
+padding:28px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.05);
+margin-bottom:30px;
+max-width:900px;
+}
+
+.roadmap-input{
+display:flex;
+flex-direction:column;
+margin-bottom:18px;
+}
+
+.roadmap-input label{
+font-size:13px;
+margin-bottom:6px;
+color:#bfcbd3;
+}
+
+.roadmap-input input{
+padding:10px 12px;
+border-radius:8px;
+border:none;
+outline:none;
+background:#223943;
+color:white;
+font-size:14px;
+}
+
+/* BUTTON */
+
+.roadmap-btn{
+padding:11px 22px;
+background:linear-gradient(135deg,#4facfe,#00c6ff);
+border:none;
+border-radius:8px;
+cursor:pointer;
+color:white;
+font-weight:600;
+transition:0.25s;
+}
+
+.roadmap-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 14px rgba(0,198,255,0.35);
+}
+
+/* RESULTS */
+
+.roadmap-results{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+max-width:900px;
+}
+
+/* ROADMAP CARD */
+
+.roadmap-card{
+background:#1c2f39;
+padding:22px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.roadmap-card h4{
+margin-bottom:10px;
+}
+
+.roadmap-card ul{
+padding-left:18px;
+}
+
+.roadmap-card li{
+margin-bottom:6px;
+font-size:14px;
+color:#e6edf3;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+.roadmap-results{
+grid-template-columns:1fr;
+}
+
+}

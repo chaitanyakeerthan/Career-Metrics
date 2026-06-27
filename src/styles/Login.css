@@ -1,0 +1,205 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* Page Background */
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+overflow:hidden;
+position:relative;
+}
+
+/* Floating Gradient Lights */
+
+body::before{
+content:'';
+position:absolute;
+width:400px;
+height:400px;
+background:radial-gradient(circle,#00f2fe44,transparent);
+top:-120px;
+left:-120px;
+filter:blur(100px);
+animation:float1 8s infinite alternate ease-in-out;
+}
+
+body::after{
+content:'';
+position:absolute;
+width:400px;
+height:400px;
+background:radial-gradient(circle,#ff9a9e44,transparent);
+bottom:-120px;
+right:-120px;
+filter:blur(100px);
+animation:float2 10s infinite alternate ease-in-out;
+}
+
+@keyframes float1{
+from{transform:translate(0,0);}
+to{transform:translate(40px,30px);}
+}
+
+@keyframes float2{
+from{transform:translate(0,0);}
+to{transform:translate(-30px,-40px);}
+}
+
+/* Login Card */
+
+.login-container{
+width:360px;
+padding:40px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(18px);
+border-radius:16px;
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
+text-align:center;
+transition:0.4s;
+z-index:2;
+}
+
+.login-container:hover{
+transform:translateY(-6px);
+box-shadow:0 25px 60px rgba(0,0,0,0.7);
+}
+
+/* Title */
+
+.login-title{
+font-size:28px;
+font-weight:600;
+color:white;
+letter-spacing:1px;
+margin-bottom:8px;
+}
+
+/* Subtitle */
+
+.login-subtitle{
+font-size:14px;
+color:#ddd;
+margin-bottom:25px;
+}
+
+/* Form */
+
+.login-form{
+display:flex;
+flex-direction:column;
+}
+
+/* Inputs */
+
+.login-input{
+padding:12px;
+margin-bottom:16px;
+border:none;
+border-radius:8px;
+background:rgba(255,255,255,0.15);
+color:white;
+font-size:14px;
+outline:none;
+transition:0.3s;
+}
+
+.login-input::placeholder{
+color:#ddd;
+}
+
+.login-input:focus{
+background:rgba(255,255,255,0.25);
+box-shadow:0 0 8px #00c6ff;
+transform:scale(1.02);
+}
+
+/* Button */
+
+.login-button{
+padding:12px;
+border:none;
+border-radius:8px;
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-button:hover{
+transform:scale(1.05);
+box-shadow:0 5px 20px rgba(0,114,255,0.6);
+}
+
+/* Footer */
+
+.login-footer{
+margin-top:20px;
+font-size:14px;
+color:#ddd;
+}
+
+.login-footer span{
+color:#00c6ff;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-footer span:hover{
+text-decoration:underline;
+}
+
+/* Entry Animation */
+
+.login-container{
+animation:fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Header containing logo + title */
+
+.login-header{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+margin-bottom:10px;
+}
+
+/* Logo */
+
+.login-logo{
+width:38px;
+height:38px;
+object-fit:contain;
+transition:0.3s;
+}
+
+/* Logo hover effect */
+
+.login-logo:hover{
+transform:rotate(8deg) scale(1.1);
+}

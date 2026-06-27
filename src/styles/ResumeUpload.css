@@ -1,0 +1,161 @@
+/* Main Container */
+
+.resume-container{
+display:flex;
+gap:30px;
+padding:30px;
+height:100vh;
+
+background:#0f2027;
+color:white;
+font-family:Arial, sans-serif;
+}
+
+
+/* Upload Panel */
+
+.resume-upload-panel{
+width:350px;
+background:#16232b;
+padding:25px;
+border-radius:12px;
+display:flex;
+flex-direction:column;
+gap:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.resume-upload-panel h2{
+text-align:center;
+margin-bottom:10px;
+}
+
+
+/* Input Groups */
+
+.resume-input-group{
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+.resume-input-group label{
+font-size:14px;
+font-weight:bold;
+}
+
+.resume-input-group input,
+.resume-input-group textarea{
+padding:10px;
+border-radius:6px;
+border:none;
+outline:none;
+font-size:14px;
+}
+
+
+/* Analyze Button */
+
+.resume-analyze-btn{
+margin-top:10px;
+padding:12px;
+background:#00c6ff;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.resume-analyze-btn:hover{
+background:#00a2d6;
+}
+
+
+/* Results Section */
+
+.resume-results{
+flex:1;
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+align-content:start;
+}
+
+
+/* Cards */
+
+.resume-card{
+background:#1c2e38;
+padding:20px;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+display:flex;
+flex-direction:column;
+gap:10px;
+min-height:150px;
+}
+
+
+/* ATS Score */
+
+.resume-card h3{
+margin-bottom:5px;
+font-size:18px;
+}
+
+.resume-card p{
+font-size:20px;
+font-weight:bold;
+color:#00e6a8;
+}
+
+
+/* Missing Skills */
+
+.resume-skill-list{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.resume-skill-list span{
+background:#ff6b6b;
+padding:5px 10px;
+border-radius:20px;
+font-size:13px;
+}
+
+
+/* Suggestions */
+
+.resume-suggestions{
+list-style:none;
+padding:0;
+margin:0;
+display:flex;
+flex-direction:column;
+gap:8px;
+
+max-height:120px;
+overflow-y:auto;
+}
+
+.resume-suggestions li{
+background:#223844;
+padding:8px;
+border-radius:6px;
+font-size:14px;
+}
+
+
+/* Scrollbar */
+
+.resume-suggestions::-webkit-scrollbar{
+width:6px;
+}
+
+.resume-suggestions::-webkit-scrollbar-thumb{
+background:#00c6ff;
+border-radius:10px;
+}

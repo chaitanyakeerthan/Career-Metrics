@@ -1,0 +1,127 @@
+/* FULL DASHBOARD AREA */
+
+.dashboard-content{
+width:100%;
+min-height:100vh;
+padding:40px 60px;
+background:#0f172a;
+color:white;
+font-family:'Segoe UI',sans-serif;
+}
+
+
+/* TITLE */
+
+.dashboard-title{
+font-size:32px;
+font-weight:600;
+margin-bottom:35px;
+}
+
+
+/* HORIZONTAL DASHBOARD GRID */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr); /* 4 cards in a row */
+gap:25px;
+}
+
+
+/* SKILL CARD */
+
+.skill-card{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.35);
+transition:all 0.3s ease;
+}
+
+.skill-card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+
+
+/* CARD HEADER */
+
+.skill-header{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+}
+
+.skill-header h3{
+font-size:16px;
+font-weight:500;
+}
+
+.skill-header span{
+color:#38bdf8;
+font-weight:600;
+}
+
+
+/* PROGRESS BAR */
+
+.skill-bar{
+width:100%;
+height:12px;
+background:#334155;
+border-radius:8px;
+overflow:hidden;
+}
+
+.skill-progress{
+height:100%;
+background:linear-gradient(90deg,#38bdf8,#22c55e);
+border-radius:8px;
+transition:width 1s ease;
+}
+
+
+/* EMPTY MESSAGE */
+
+.no-skills{
+grid-column:1/-1;
+text-align:center;
+color:#94a3b8;
+}
+
+
+/* LAPTOP */
+
+@media(max-width:1200px){
+
+.skills-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+.skills-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.skills-grid{
+grid-template-columns:1fr;
+}
+
+.dashboard-content{
+padding:25px;
+}
+
+}
